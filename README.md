@@ -15,6 +15,8 @@ docker build -t qure_assignment .
 
 docker run -t -d qure_assignement
 
+docker compose up
+
 ```
 
 Then open the browser and go to local host http://127.0.0.1:8000/, which it currently is set to
