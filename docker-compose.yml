@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: bash -c "pip3 install torchvision && pip3 list && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver"
+    command: bash -c "pip3 install torchvision && pip3 list && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic &&python3 manage.py runserver"
     container_name: qure_assignment
     volumes:
       - .:/qure_assignment
